@@ -35,4 +35,11 @@ resource_files:
 - "_extensions/quarto-ext/lightbox/resources/js/glightbox.min.js"
 ```
 
+The utterances app needs to be installed for the target github repo: <https://github.com/apps/utterances/installations/new>  
+
+You can double checked it was installed through your account git options under applications: <https://github.com/settings/installations/> 
+
+
+
+
 
