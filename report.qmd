@@ -1,0 +1,61 @@
+---
+title: "Quarto Document with Comments"
+format: html
+editor: source
+filters:
+   - lightbox
+lightbox: auto
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+
+## lightbox
+
+Quarto can arrange images for you, with the ability to both arrange them in various grid configurations as well as for a pop-out interaction when clicked on.  
+
+These images are interactive, try clicking on one!
+
+::: {layout-ncol="2"}
+
+![Lions](img/Lion_waiting_in_Namibia.jpg){group="my-gallery"}
+
+![and tigers](img/Panthera_tigris_corbetti_%28Tierpark_Berlin%29_832-714-%28118%29.jpg){group="my-gallery"}
+
+![and bears](img/Chengdu-pandas-d10.jpg){group="my-gallery"}
+
+![oh my!](img/The_Wizard_of_Oz_1955_Lobby_Card.jpg){group="my-gallery"}
+
+:::
+
+References: 
+
+- Tips on dealing with displaying images in a rendered quarto document: <https://quarto.org/docs/authoring/figures.html#figure-panels>
+
+- Install the lightbox extension: <https://github.com/quarto-ext/lightbox>
+
+Images are from Wikipedia and in the public domain:
+
+- Lions: <https://en.wikipedia.org/wiki/File:Lion_waiting_in_Namibia.jpg>
+- Tigers: <https://commons.wikimedia.org/wiki/File:Panthera_tigris_corbetti_(Tierpark_Berlin)_832-714-(118).jpg>
+- Bears: <https://en.wikipedia.org/wiki/Bear#/media/File:Chengdu-pandas-d10.jpg>
+- Wizard of Oz: <https://commons.wikimedia.org/wiki/File:The_Wizard_of_Oz_1955_Lobby_Card.jpg>
