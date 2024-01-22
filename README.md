@@ -1,12 +1,14 @@
 # quarto_with_comments
 
+Example published to: <https://colorado.posit.co/rsc/quarto-utterances/>
 
 References: 
 
 - <https://quarto.org/docs/output-formats/html-basics.html#commenting> 
 - <https://github.com/quarto-ext/lightbox> 
 - <https://quarto.org/docs/projects/quarto-projects.html> 
-
+- Tips on dealing with displaying images in a rendered quarto document: <https://quarto.org/docs/authoring/figures.html#figure-panels>
+- Install the lightbox extension: <https://github.com/quarto-ext/lightbox>
 
 Example also used in: <https://github.com/rstudio/posit-demo-assets/blob/main/Python/quarto-lightbox/quarto-python-lightbox.qmd> 
 

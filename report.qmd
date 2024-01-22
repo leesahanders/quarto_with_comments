@@ -50,15 +50,26 @@ These images are interactive, try clicking on one!
 
 :::
 
-References: 
-
-- Tips on dealing with displaying images in a rendered quarto document: <https://quarto.org/docs/authoring/figures.html#figure-panels>
-
-- Install the lightbox extension: <https://github.com/quarto-ext/lightbox>
 
 Images are from Wikipedia and in the public domain:
 
-- Lions: <https://en.wikipedia.org/wiki/File:Lion_waiting_in_Namibia.jpg>
-- Tigers: <https://commons.wikimedia.org/wiki/File:Panthera_tigris_corbetti_(Tierpark_Berlin)_832-714-(118).jpg>
-- Bears: <https://en.wikipedia.org/wiki/Bear#/media/File:Chengdu-pandas-d10.jpg>
-- Wizard of Oz: <https://commons.wikimedia.org/wiki/File:The_Wizard_of_Oz_1955_Lobby_Card.jpg>
+
+```{r}
+img_ref <- data.frame("image" = c("Lions", "Tigers", "Bears", "Wizard of Oz"), url = c('<a href="https://en.wikipedia.org/wiki/File:Lion_waiting_in_Namibia.jpg">Lions Wikipedia URL</a>',
+                                                                                       '<a href="https://commons.wikimedia.org/wiki/File:Panthera_tigris_corbetti_(Tierpark_Berlin)_832-714-(118).jpg">Tigers Wikipedia URL</a>',
+                                                                                       '<a href="https://en.wikipedia.org/wiki/Bear#/media/File:Chengdu-pandas-d10.jpg">Bears Wikipedia URL</a>',
+                                                                                       '<a href="https://commons.wikimedia.org/wiki/File:The_Wizard_of_Oz_1955_Lobby_Card.jpg">Wizard of Oz Wikipedia URL</a>'))
+                      
+
+library(tidyverse)
+library(DT)
+
+img_ref %>%
+  datatable(extensions = 'Buttons', escape = FALSE, 
+            options = list(dom = 'Blfrtip',
+                           buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+                           lengthMenu = list(c(10,25,50,-1),
+                                             c(10,25,50,"All"))))
+```
+
+
