@@ -5,6 +5,9 @@ editor: source
 filters:
    - lightbox
 lightbox: auto
+comments:
+  utterances:
+    repo: leesahanders/quarto_with_comments
 ---
 
 ## Quarto
