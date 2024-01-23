@@ -71,6 +71,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="report_files/libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="report_files/libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 
+<script src="report_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="report_files/libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="report_files/libs/datatables-binding-0.31/datatables.js"></script>
+<script src="report_files/libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="report_files/libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="report_files/libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="report_files/libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="report_files/libs/jszip-1.13.6/jszip.min.js"></script>
+<script src="report_files/libs/pdfmake-1.13.6/pdfmake.js"></script>
+<script src="report_files/libs/pdfmake-1.13.6/vfs_fonts.js"></script>
+<link href="report_files/libs/dt-ext-buttons-1.13.6/css/buttons.dataTables.min.css" rel="stylesheet">
+<script src="report_files/libs/dt-ext-buttons-1.13.6/js/dataTables.buttons.min.js"></script>
+<script src="report_files/libs/dt-ext-buttons-1.13.6/js/buttons.html5.min.js"></script>
+<script src="report_files/libs/dt-ext-buttons-1.13.6/js/buttons.colVis.min.js"></script>
+<script src="report_files/libs/dt-ext-buttons-1.13.6/js/buttons.print.min.js"></script>
+<link href="report_files/libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="report_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
 
 </head>
 
@@ -126,13 +144,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-figure quarto-figure-center" style="flex-basis: 50.0%;justify-content: center;">
 <figure class="figure">
-<p><a href="img/Lion_waiting_in_Namibia.jpg" class="lightbox" data-gallery="my-gallery" title="Lions"><img src="img/Lion_waiting_in_Namibia.jpg" class="img-fluid figure-img"></a></p>
+<p><a href="img/Lion_waiting_in_Namibia.jpg" class="lightbox" title="Lions" data-gallery="my-gallery"><img src="img/Lion_waiting_in_Namibia.jpg" class="img-fluid figure-img"></a></p>
 <figcaption class="figure-caption">Lions</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center" style="flex-basis: 50.0%;justify-content: center;">
 <figure class="figure">
-<p><a href="img/Panthera_tigris_corbetti_%28Tierpark_Berlin%29_832-714-%28118%29.jpg" class="lightbox" data-gallery="my-gallery" title="and tigers"><img src="img/Panthera_tigris_corbetti_%28Tierpark_Berlin%29_832-714-%28118%29.jpg" class="img-fluid figure-img"></a></p>
+<p><a href="img/Panthera_tigris_corbetti_%28Tierpark_Berlin%29_832-714-%28118%29.jpg" class="lightbox" title="and tigers" data-gallery="my-gallery"><img src="img/Panthera_tigris_corbetti_%28Tierpark_Berlin%29_832-714-%28118%29.jpg" class="img-fluid figure-img"></a></p>
 <figcaption class="figure-caption">and tigers</figcaption>
 </figure>
 </div>
@@ -140,30 +158,60 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-figure quarto-figure-center" style="flex-basis: 50.0%;justify-content: center;">
 <figure class="figure">
-<p><a href="img/Chengdu-pandas-d10.jpg" class="lightbox" data-gallery="my-gallery" title="and bears"><img src="img/Chengdu-pandas-d10.jpg" class="img-fluid figure-img"></a></p>
+<p><a href="img/Chengdu-pandas-d10.jpg" class="lightbox" title="and bears" data-gallery="my-gallery"><img src="img/Chengdu-pandas-d10.jpg" class="img-fluid figure-img"></a></p>
 <figcaption class="figure-caption">and bears</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center" style="flex-basis: 50.0%;justify-content: center;">
 <figure class="figure">
-<p><a href="img/The_Wizard_of_Oz_1955_Lobby_Card.jpg" class="lightbox" data-gallery="my-gallery" title="oh my!"><img src="img/The_Wizard_of_Oz_1955_Lobby_Card.jpg" class="img-fluid figure-img"></a></p>
+<p><a href="img/The_Wizard_of_Oz_1955_Lobby_Card.jpg" class="lightbox" title="oh my!" data-gallery="my-gallery"><img src="img/The_Wizard_of_Oz_1955_Lobby_Card.jpg" class="img-fluid figure-img"></a></p>
 <figcaption class="figure-caption">oh my!</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>References:</p>
-<ul>
-<li><p>Tips on dealing with displaying images in a rendered quarto document: <a href="https://quarto.org/docs/authoring/figures.html#figure-panels" class="uri">https://quarto.org/docs/authoring/figures.html#figure-panels</a></p></li>
-<li><p>Install the lightbox extension: <a href="https://github.com/quarto-ext/lightbox" class="uri">https://github.com/quarto-ext/lightbox</a></p></li>
-</ul>
 <p>Images are from Wikipedia and in the public domain:</p>
-<ul>
-<li>Lions: <a href="https://en.wikipedia.org/wiki/File:Lion_waiting_in_Namibia.jpg" class="uri">https://en.wikipedia.org/wiki/File:Lion_waiting_in_Namibia.jpg</a></li>
-<li>Tigers: <a href="https://commons.wikimedia.org/wiki/File:Panthera_tigris_corbetti_(Tierpark_Berlin)_832-714-(118).jpg" class="uri">https://commons.wikimedia.org/wiki/File:Panthera_tigris_corbetti_(Tierpark_Berlin)_832-714-(118).jpg</a></li>
-<li>Bears: <a href="https://en.wikipedia.org/wiki/Bear#/media/File:Chengdu-pandas-d10.jpg" class="uri">https://en.wikipedia.org/wiki/Bear#/media/File:Chengdu-pandas-d10.jpg</a></li>
-<li>Wizard of Oz: <a href="https://commons.wikimedia.org/wiki/File:The_Wizard_of_Oz_1955_Lobby_Card.jpg" class="uri">https://commons.wikimedia.org/wiki/File:The_Wizard_of_Oz_1955_Lobby_Card.jpg</a></li>
-</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>img_ref <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"image"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Lions"</span>, <span class="st">"Tigers"</span>, <span class="st">"Bears"</span>, <span class="st">"Wizard of Oz"</span>), <span class="at">url =</span> <span class="fu">c</span>(<span class="st">'&lt;a href="https://en.wikipedia.org/wiki/File:Lion_waiting_in_Namibia.jpg"&gt;Lions Wikipedia URL&lt;/a&gt;'</span>,</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>                                                                                       <span class="st">'&lt;a href="https://commons.wikimedia.org/wiki/File:Panthera_tigris_corbetti_(Tierpark_Berlin)_832-714-(118).jpg"&gt;Tigers Wikipedia URL&lt;/a&gt;'</span>,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                                                                                       <span class="st">'&lt;a href="https://en.wikipedia.org/wiki/Bear#/media/File:Chengdu-pandas-d10.jpg"&gt;Bears Wikipedia URL&lt;/a&gt;'</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                                                                                       <span class="st">'&lt;a href="https://commons.wikimedia.org/wiki/File:The_Wizard_of_Oz_1955_Lobby_Card.jpg"&gt;Wizard of Oz Wikipedia URL&lt;/a&gt;'</span>))</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                      </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.4     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.0
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DT)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># img_ref %&gt;%</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">#   datatable(extensions = 'Buttons', escape = FALSE, </span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">#             options = list(dom = 'Blfrtip',</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">#                            buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">#                            lengthMenu = list(c(10,25,50,-1),</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">#                                              c(10,25,50,"All"))))</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>img_ref <span class="sc">%&gt;%</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">datatable</span>(<span class="at">extensions =</span> <span class="st">'Buttons'</span>, <span class="at">escape =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>            <span class="at">options =</span> <span class="fu">list</span>(<span class="at">dom =</span> <span class="st">'Blfrtip'</span>,</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>                           <span class="at">buttons =</span> <span class="fu">c</span>(<span class="st">'copy'</span>, <span class="st">'csv'</span>, <span class="st">'excel'</span>, <span class="st">'pdf'</span>, <span class="st">'print'</span>),</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>                           <span class="at">lengthMenu =</span> <span class="fu">list</span>(<span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">25</span>,<span class="dv">50</span>,<span class="sc">-</span><span class="dv">1</span>),</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>                                             <span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">25</span>,<span class="dv">50</span>,<span class="st">"All"</span>))))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item" id="htmlwidget-56f097f236033d708b20" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-56f097f236033d708b20">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1","2","3","4"],["Lions","Tigers","Bears","Wizard of Oz"],["<a href=\"https://en.wikipedia.org/wiki/File:Lion_waiting_in_Namibia.jpg\">Lions Wikipedia URL<\/a>","<a href=\"https://commons.wikimedia.org/wiki/File:Panthera_tigris_corbetti_(Tierpark_Berlin)_832-714-(118).jpg\">Tigers Wikipedia URL<\/a>","<a href=\"https://en.wikipedia.org/wiki/Bear#/media/File:Chengdu-pandas-d10.jpg\">Bears Wikipedia URL<\/a>","<a href=\"https://commons.wikimedia.org/wiki/File:The_Wizard_of_Oz_1955_Lobby_Card.jpg\">Wizard of Oz Wikipedia URL<\/a>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>image<\/th>\n      <th>url<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["copy","csv","excel","pdf","print"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"image","targets":1},{"name":"url","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 </section>
 
 </main>
@@ -404,7 +452,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <script src="https://utteranc.es/client.js" repo="leesahanders/quarto_with_comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","loop":true});</script>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox","loop":true,"descPosition":"bottom"});</script>
 
 
 
