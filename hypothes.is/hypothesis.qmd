@@ -1,0 +1,164 @@
+---
+title: "Quarto Document with Comments"
+format: html
+editor: source
+filters:
+   - lightbox
+lightbox: auto
+  hypothesis: 
+    theme: clean
+---
+
+<!-- setwd("C:/Users/LisaAnders/Documents/git/quarto_with_comments/hypothes.is") -->
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+
+## lightbox
+
+Quarto can arrange images for you, with the ability to both arrange them in various grid configurations as well as for a pop-out interaction when clicked on.  
+
+These images are interactive, try clicking on one!
+
+::: {layout-ncol="2"}
+
+![Lions](img/Lion_waiting_in_Namibia.jpg){group="my-gallery"}
+
+![and tigers](img/Panthera_tigris_corbetti_%28Tierpark_Berlin%29_832-714-%28118%29.jpg){group="my-gallery"}
+
+![and bears](img/Chengdu-pandas-d10.jpg){group="my-gallery"}
+
+![oh my!](img/The_Wizard_of_Oz_1955_Lobby_Card.jpg){group="my-gallery"}
+
+:::
+
+
+Images are from Wikipedia and in the public domain:
+
+```{r}
+library(tidyverse)
+library(DT)
+
+img_ref <- data.frame("image" = c("Lions", "Tigers", "Bears", "Wizard of Oz"), url = c('<a href="https://en.wikipedia.org/wiki/File:Lion_waiting_in_Namibia.jpg">Lions Wikipedia URL</a>',
+                                                                                       '<a href="https://commons.wikimedia.org/wiki/File:Panthera_tigris_corbetti_(Tierpark_Berlin)_832-714-(118).jpg">Tigers Wikipedia URL</a>',
+                                                                                       '<a href="https://en.wikipedia.org/wiki/Bear#/media/File:Chengdu-pandas-d10.jpg">Bears Wikipedia URL</a>',
+                                                                                       '<a href="https://commons.wikimedia.org/wiki/File:The_Wizard_of_Oz_1955_Lobby_Card.jpg">Wizard of Oz Wikipedia URL</a>'))
+                      
+
+img_ref %>%
+  datatable(extensions = 'Buttons', escape = FALSE,
+            options = list(dom = 'Blfrtip',
+                           buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+                           lengthMenu = list(c(10,25,50,-1),
+                                             c(10,25,50,"All"))))
+```
+# Shinylive
+
+r-shinylive: <https://posit-dev.github.io/r-shinylive/> 
+
+```{shinylive-r}
+#| standalone: true
+#| viewerHeight: 420
+#| components: [editor, viewer]
+
+library(shiny)
+library(bslib)
+library(datasets)
+
+# Data pre-processing ----
+# Tweak the "am" variable to have nicer factor labels -- since this
+# doesn't rely on any user inputs, we can do this once at startup
+# and then use the value throughout the lifetime of the app
+mpgData <- mtcars
+mpgData$am <- factor(mpgData$am, labels = c("Automatic", "Manual"))
+
+
+# Define UI for miles per gallon app ----
+ui <- page_sidebar(
+
+  # App title ----
+  title = "Miles Per Gallon",
+
+  # Sidebar panel for inputs ----
+  sidebar = sidebar(
+
+    # Input: Selector for variable to plot against mpg ----
+    selectInput(
+      "variable",
+      "Variable:",
+      c(
+        "Cylinders" = "cyl",
+        "Transmission" = "am",
+        "Gears" = "gear"
+      )
+    ),
+
+    # Input: Checkbox for whether outliers should be included ----
+    checkboxInput("outliers", "Show outliers", TRUE)
+  ),
+
+  # Output: Formatted text for caption ----
+  h3(textOutput("caption")),
+
+  # Output: Plot of the requested variable against mpg ----
+  plotOutput("mpgPlot")
+)
+
+# Define server logic to plot various variables against mpg ----
+server <- function(input, output) {
+
+  # Compute the formula text ----
+  # This is in a reactive expression since it is shared by the
+  # output$caption and output$mpgPlot functions
+  formulaText <- reactive({
+    paste("mpg ~", input$variable)
+  })
+
+  # Return the formula text for printing as a caption ----
+  output$caption <- renderText({
+    formulaText()
+  })
+
+  # Generate a plot of the requested variable against mpg ----
+  # and only exclude outliers if requested
+  output$mpgPlot <- renderPlot({
+    boxplot(
+      as.formula(formulaText()),
+      data = mpgData,
+      outline = input$outliers,
+      col = "#75AADB",
+      pch = 19
+    )
+  })
+}
+
+# Create Shiny app ----
+shinyApp(ui, server)
+
+```
+
+
+## Comments 
+
+Comments are added following: <https://quarto.org/docs/output-formats/html-basics.html#commenting> 
+
+
