@@ -4,7 +4,7 @@
   "platform": "4.3.1",
   "metadata": {
     "appmode": "quarto-static",
-    "primary_rmd": "utterances.qmd",
+    "primary_rmd": ".Rprofile",
     "primary_html": null,
     "content_category": null,
     "has_parameters": false
@@ -2558,7 +2558,7 @@
         "Maintainer": "Kevin Ushey <kevin@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2024-04-11 22:20:02 UTC",
-        "Built": "R 4.3.3; ; 2024-05-15 00:37:36 UTC; windows"
+        "Built": "R 4.3.3; ; 2024-05-19 00:24:16 UTC; windows"
       }
     },
     "reprex": {
@@ -3455,6 +3455,9 @@
     }
   },
   "files": {
+    ".Rprofile": {
+      "checksum": "e5e6dcbaee72ce37ed7d85847c0f43ba"
+    },
     "_extensions/quarto-ext/lightbox/_extension.yml": {
       "checksum": "9d4227e9643702041f4905b21ab92edb"
     },
