@@ -4,7 +4,7 @@
   "platform": "4.3.1",
   "metadata": {
     "appmode": "quarto-static",
-    "primary_rmd": "hypothesis.qmd",
+    "primary_rmd": ".Rprofile",
     "primary_html": null,
     "content_category": null,
     "has_parameters": false
@@ -2530,6 +2530,37 @@
         "Built": "R 4.3.1; ; 2023-09-07 02:44:49 UTC; windows"
       }
     },
+    "renv": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "renv",
+        "Type": "Package",
+        "Title": "Project Environments",
+        "Version": "1.0.7",
+        "Authors@R": "c(\n    person(\"Kevin\", \"Ushey\", role = c(\"aut\", \"cre\"), email = \"kevin@rstudio.com\",\n           comment = c(ORCID = \"0000-0003-2880-7407\")),\n    person(\"Hadley\", \"Wickham\", role = c(\"aut\"), email = \"hadley@rstudio.com\",\n           comment = c(ORCID = \"0000-0003-4757-117X\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n    )",
+        "Description": "A dependency management toolkit for R. Using 'renv', you can create\n    and manage project-local R libraries, save the state of these libraries to\n    a 'lockfile', and later restore your library as required. Together, these\n    tools can help make your projects more isolated, portable, and reproducible.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://rstudio.github.io/renv/, https://github.com/rstudio/renv",
+        "BugReports": "https://github.com/rstudio/renv/issues",
+        "Imports": "utils",
+        "Suggests": "BiocManager, cli, covr, cpp11, devtools, gitcreds, jsonlite,\nknitr, miniUI, packrat, pak, R6, remotes, reticulate,\nrmarkdown, rstudioapi, shiny, testthat, uuid, waldo, yaml,\nwebfakes",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.1",
+        "VignetteBuilder": "knitr",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Config/testthat/parallel": "true",
+        "Config/testthat/start-first": "bioconductor,python,install,restore,snapshot,retrieve,remotes",
+        "NeedsCompilation": "no",
+        "Packaged": "2024-04-11 16:26:24 UTC; kevin",
+        "Author": "Kevin Ushey [aut, cre] (<https://orcid.org/0000-0003-2880-7407>),\n  Hadley Wickham [aut] (<https://orcid.org/0000-0003-4757-117X>),\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Kevin Ushey <kevin@rstudio.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2024-04-11 22:20:02 UTC",
+        "Built": "R 4.3.3; ; 2024-05-19 00:24:16 UTC; windows"
+      }
+    },
     "reprex": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -3405,28 +3436,75 @@
         "Package": "yaml",
         "Type": "Package",
         "Title": "Methods to Convert R Data to YAML and Back",
-        "Date": "2024-07-22",
-        "Version": "2.3.10",
+        "Date": "2023-11-28",
+        "Version": "2.3.8",
         "Suggests": "RUnit",
-        "Author": "Shawn P Garbett [aut], Jeremy Stephens [aut, cre], Kirill Simonov [aut], Yihui Xie [ctb],\n  Zhuoer Dong [ctb], Hadley Wickham [ctb], Jeffrey Horner [ctb], reikoch [ctb],\n  Will Beasley [ctb], Brendan O'Connor [ctb], Gregory R. Warnes [ctb],\n  Michael Quinn [ctb], Zhian N. Kamvar [ctb], Charlie Gao [ctb]",
+        "Author": "Shawn P Garbett [aut], Jeremy Stephens [aut, cre], Kirill Simonov [aut], Yihui Xie [ctb],\n  Zhuoer Dong [ctb], Hadley Wickham [ctb], Jeffrey Horner [ctb], reikoch [ctb],\n  Will Beasley [ctb], Brendan O'Connor [ctb], Gregory R. Warnes [ctb],\n  Michael Quinn [ctb], Zhian N. Kamvar [ctb]",
         "Maintainer": "Shawn Garbett <shawn.garbett@vumc.org>",
         "License": "BSD_3_clause + file LICENSE",
         "Description": "Implements the 'libyaml' 'YAML' 1.1 parser and emitter\n  (<https://pyyaml.org/wiki/LibYAML>) for R.",
         "URL": "https://github.com/vubiostat/r-yaml/",
         "BugReports": "https://github.com/vubiostat/r-yaml/issues",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-07-22 15:44:18 UTC; garbetsp",
-        "Repository": "RSPM",
-        "Date/Publication": "2024-07-26 15:10:02 UTC",
-        "Encoding": "UTF-8",
-        "Built": "R 4.3.0; x86_64-w64-mingw32; 2024-07-27 04:39:06 UTC; windows",
+        "Packaged": "2023-12-11 16:46:09 UTC; garbetsp",
+        "Repository": "CRAN",
+        "Date/Publication": "2023-12-11 18:50:02 UTC",
+        "Built": "R 4.3.2; x86_64-w64-mingw32; 2024-02-25 01:56:27 UTC; windows",
         "Archs": "x64"
       }
     }
   },
   "files": {
+    ".Rprofile": {
+      "checksum": "7cac47450d12b92aebaa86bb791f21de"
+    },
+    "_extensions/quarto-ext/lightbox/_extension.yml": {
+      "checksum": "9d4227e9643702041f4905b21ab92edb"
+    },
+    "_extensions/quarto-ext/lightbox/lightbox.css": {
+      "checksum": "7509ce40cd18e55cd3e4ee2d0113887a"
+    },
+    "_extensions/quarto-ext/lightbox/lightbox.lua": {
+      "checksum": "0a10735cf5d7facd72e48547417081c3"
+    },
+    "_extensions/quarto-ext/lightbox/resources/css/glightbox.min.css": {
+      "checksum": "9b438b29cef1c212d1c65a877ffc7232"
+    },
+    "_extensions/quarto-ext/lightbox/resources/js/glightbox.min.js": {
+      "checksum": "2b4c8cbaade24ecb58bcb0d89694ccee"
+    },
+    "_extensions/quarto-ext/shinylive/_extension.yml": {
+      "checksum": "9f2cddbc045da84e2f8ba82bcd02709d"
+    },
+    "_extensions/quarto-ext/shinylive/README.md": {
+      "checksum": "9de808d1d0cc8d978456d410d31cd405"
+    },
+    "_extensions/quarto-ext/shinylive/resources/css/shinylive-quarto.css": {
+      "checksum": "a66352fc1966c083966991ad27ed5800"
+    },
+    "_extensions/quarto-ext/shinylive/shinylive.lua": {
+      "checksum": "7ff7a0d00a115eb612711829b3f517a9"
+    },
+    "_quarto.yaml": {
+      "checksum": "e5883022dcec448ef7d713d35907b7c6"
+    },
     "hypothesis.qmd": {
-      "checksum": "b2bd0f1f6e3dde5ee12cb77d6830dfc7"
+      "checksum": "146684e842eb26ea9d998b8d3c6e0ac3"
+    },
+    "img/Chengdu-pandas-d10.jpg": {
+      "checksum": "55ef49ea2db1762990435c43e2a8dca0"
+    },
+    "img/Lion_waiting_in_Namibia.jpg": {
+      "checksum": "c407f20233958896edd2bc90cc1cba12"
+    },
+    "img/Panthera_tigris_corbetti_(Tierpark_Berlin)_832-714-(118).jpg": {
+      "checksum": "40aa373fb50f06112555bcc941aaf6e0"
+    },
+    "img/The_Wizard_of_Oz_1955_Lobby_Card.jpg": {
+      "checksum": "bdbf9246bd2eb7ff5942b3bdc0f3a401"
+    },
+    "renv.lock": {
+      "checksum": "e99b8a8d062e01dbc901d06eebc67865"
     }
   },
   "users": null
