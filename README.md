@@ -39,7 +39,10 @@ resource_files:
 
 The utterances app needs to be installed for the target github repo: <https://github.com/apps/utterances/installations/new>  
 
+The giscuss app also needs to be installed for the target github repo: <https://github.com/giscus/giscus> and <https://github.com/apps/giscus> 
+
 You can double checked it was installed through your account git options under applications: <https://github.com/settings/installations/> 
+
 
 
 
