@@ -217,6 +217,44 @@
         "RemoteSha": "1.0.12"
       }
     },
+    "archive": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "archive",
+        "Title": "Multi-Format Archive and Compression Support",
+        "Version": "1.1.8",
+        "Authors@R": "c(\n    person(\"Jim\", \"Hester\", role = \"aut\",\n           comment = c(ORCID = \"0000-0002-2739-7082\")),\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = c(\"aut\", \"cre\")),\n    person(\"Ondrej\", \"Holy\", role = \"cph\",\n           comment = \"archive_write_add_filter implementation\"),\n    person(\"RStudio\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Bindings to 'libarchive' <http://www.libarchive.org> the\n    Multi-format archive and compression library. Offers R connections and\n    direct extraction for many archive formats including 'tar', 'ZIP',\n    '7-zip', 'RAR', 'CAB' and compression formats including 'gzip',\n    'bzip2', 'compress', 'lzma' and 'xz'.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://archive.r-lib.org/, https://github.com/r-lib/archive",
+        "BugReports": "https://github.com/r-lib/archive/issues",
+        "Depends": "R (>= 3.6.0)",
+        "Imports": "cli, glue, rlang, tibble",
+        "Suggests": "covr, testthat",
+        "LinkingTo": "cli",
+        "ByteCompile": "true",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.1",
+        "SystemRequirements": "libarchive: libarchive-dev (deb), libarchive-devel\n(rpm), libarchive (homebrew), libarchive_dev (csw)",
+        "Biarch": "true",
+        "NeedsCompilation": "yes",
+        "Packaged": "2024-04-28 10:54:34 UTC; gaborcsardi",
+        "Author": "Jim Hester [aut] (<https://orcid.org/0000-0002-2739-7082>),\n  Gábor Csárdi [aut, cre],\n  Ondrej Holy [cph] (archive_write_add_filter implementation),\n  RStudio [cph, fnd]",
+        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2024-04-28 12:00:03 UTC",
+        "Built": "R 4.3.0; x86_64-w64-mingw32; 2024-06-22 04:56:59 UTC; windows",
+        "Archs": "x64",
+        "RemoteType": "standard",
+        "RemotePkgRef": "archive",
+        "RemoteRef": "archive",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemoteSha": "1.1.8"
+      }
+    },
     "askpass": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -378,6 +416,34 @@
         "Repository": "CRAN",
         "Date/Publication": "2023-03-17 12:00:06 UTC",
         "Built": "R 4.3.1; ; 2023-09-07 02:28:09 UTC; windows"
+      }
+    },
+    "brio": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "brio",
+        "Title": "Basic R Input Output",
+        "Version": "1.1.5",
+        "Authors@R": "c(\n    person(\"Jim\", \"Hester\", role = \"aut\",\n           comment = c(ORCID = \"0000-0002-2739-7082\")),\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = c(\"aut\", \"cre\")),\n    person(given = \"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Functions to handle basic input output, these functions\n    always read and write UTF-8 (8-bit Unicode Transformation Format)\n    files and provide more explicit control over line endings.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://brio.r-lib.org, https://github.com/r-lib/brio",
+        "BugReports": "https://github.com/r-lib/brio/issues",
+        "Depends": "R (>= 3.6)",
+        "Suggests": "covr, testthat (>= 3.0.0)",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.2.3",
+        "NeedsCompilation": "yes",
+        "Packaged": "2024-04-24 18:51:29 UTC; gaborcsardi",
+        "Author": "Jim Hester [aut] (<https://orcid.org/0000-0002-2739-7082>),\n  Gábor Csárdi [aut, cre],\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2024-04-24 19:20:07 UTC",
+        "Built": "R 4.3.0; x86_64-w64-mingw32; 2024-06-26 20:41:04 UTC; windows",
+        "Archs": "x64"
       }
     },
     "broom": {
@@ -821,6 +887,43 @@
         "Built": "R 4.3.1; ; 2024-08-15 00:36:37 UTC; windows"
       }
     },
+    "desc": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "desc",
+        "Title": "Manipulate DESCRIPTION Files",
+        "Version": "1.4.3",
+        "Authors@R": "c(\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = c(\"aut\", \"cre\")),\n    person(\"Kirill\", \"Müller\", role = \"aut\"),\n    person(\"Jim\", \"Hester\", , \"james.f.hester@gmail.com\", role = \"aut\"),\n    person(\"Maëlle\", \"Salmon\", role = \"ctb\",\n           comment = c(ORCID = \"0000-0002-2815-0399\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+        "Description": "Tools to read, write, create, and manipulate DESCRIPTION\n    files.  It is intended for packages that create or manipulate other\n    packages.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://desc.r-lib.org/, https://github.com/r-lib/desc",
+        "BugReports": "https://github.com/r-lib/desc/issues",
+        "Depends": "R (>= 3.4)",
+        "Imports": "cli, R6, utils",
+        "Suggests": "callr, covr, gh, spelling, testthat, whoami, withr",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "Language": "en-US",
+        "RoxygenNote": "7.2.3",
+        "Collate": "'assertions.R' 'authors-at-r.R' 'built.R' 'classes.R'\n'collate.R' 'constants.R' 'deps.R' 'desc-package.R'\n'description.R' 'encoding.R' 'find-package-root.R' 'latex.R'\n'non-oo-api.R' 'package-archives.R' 'read.R' 'remotes.R'\n'str.R' 'syntax_checks.R' 'urls.R' 'utils.R' 'validate.R'\n'version.R'",
+        "NeedsCompilation": "no",
+        "Packaged": "2023-12-10 11:07:50 UTC; gaborcsardi",
+        "Author": "Gábor Csárdi [aut, cre],\n  Kirill Müller [aut],\n  Jim Hester [aut],\n  Maëlle Salmon [ctb] (<https://orcid.org/0000-0002-2815-0399>),\n  Posit Software, PBC [cph, fnd]",
+        "Repository": "RSPM",
+        "Date/Publication": "2023-12-10 11:40:08 UTC",
+        "Built": "R 4.3.0; ; 2024-01-23 02:20:09 UTC; windows",
+        "RemoteType": "standard",
+        "RemotePkgRef": "desc",
+        "RemoteRef": "desc",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemoteSha": "1.4.3"
+      }
+    },
     "digest": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -1046,6 +1149,41 @@
         "Archs": "x64"
       }
     },
+    "filelock": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "filelock",
+        "Title": "Portable File Locking",
+        "Version": "1.0.3",
+        "Authors@R": "c(\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = c(\"aut\", \"cre\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Place an exclusive or shared lock on a file. It uses\n    'LockFile' on Windows and 'fcntl' locks on Unix-like systems.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://r-lib.github.io/filelock/,\nhttps://github.com/r-lib/filelock",
+        "BugReports": "https://github.com/r-lib/filelock/issues",
+        "Depends": "R (>= 3.4)",
+        "Suggests": "callr (>= 2.0.0), covr, testthat (>= 3.0.0)",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.2.3",
+        "NeedsCompilation": "yes",
+        "Packaged": "2023-12-11 01:12:05 UTC; gaborcsardi",
+        "Author": "Gábor Csárdi [aut, cre],\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2023-12-11 04:40:02 UTC",
+        "Built": "R 4.3.0; x86_64-w64-mingw32; 2024-01-23 04:31:43 UTC; windows",
+        "Archs": "x64",
+        "RemoteType": "standard",
+        "RemotePkgRef": "filelock",
+        "RemoteRef": "filelock",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemoteSha": "1.0.3"
+      }
+    },
     "fontawesome": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -1227,6 +1365,65 @@
         "Repository": "RSPM",
         "Date/Publication": "2023-10-12 11:40:02 UTC",
         "Built": "R 4.3.1; ; 2024-08-15 00:39:56 UTC; windows"
+      }
+    },
+    "gh": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "gh",
+        "Title": "'GitHub' 'API'",
+        "Version": "1.4.1",
+        "Authors@R": "c(\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = c(\"cre\", \"ctb\")),\n    person(\"Jennifer\", \"Bryan\", role = \"aut\"),\n    person(\"Hadley\", \"Wickham\", role = \"aut\"),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Minimal client to access the 'GitHub' 'API'.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://gh.r-lib.org/, https://github.com/r-lib/gh#readme",
+        "BugReports": "https://github.com/r-lib/gh/issues",
+        "Depends": "R (>= 3.6)",
+        "Imports": "cli (>= 3.0.1), gitcreds, glue, httr2, ini, jsonlite,\nlifecycle, rlang (>= 1.0.0)",
+        "Suggests": "covr, knitr, mockery, rmarkdown, rprojroot, spelling,\ntestthat (>= 3.0.0), withr",
+        "VignetteBuilder": "knitr",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "Language": "en-US",
+        "RoxygenNote": "7.3.1.9000",
+        "NeedsCompilation": "no",
+        "Packaged": "2024-03-28 12:17:15 UTC; gaborcsardi",
+        "Author": "Gábor Csárdi [cre, ctb],\n  Jennifer Bryan [aut],\n  Hadley Wickham [aut],\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2024-03-28 16:40:07 UTC",
+        "Built": "R 4.3.3; ; 2024-05-10 01:57:07 UTC; windows"
+      }
+    },
+    "gitcreds": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "gitcreds",
+        "Title": "Query 'git' Credentials from 'R'",
+        "Version": "0.1.2",
+        "Authors@R": "c(\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = c(\"aut\", \"cre\")),\n    person(\"RStudio\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Query, set, delete credentials from the 'git' credential\n    store. Manage 'GitHub' tokens and other 'git' credentials. This\n    package is to be used by other packages that need to authenticate to\n    'GitHub' and/or other 'git' repositories.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://gitcreds.r-lib.org/, https://github.com/r-lib/gitcreds",
+        "BugReports": "https://github.com/r-lib/gitcreds/issues",
+        "Depends": "R (>= 3.4)",
+        "Suggests": "codetools, covr, knitr, mockery, oskeyring, rmarkdown,\ntestthat (>= 3.0.0), withr",
+        "VignetteBuilder": "knitr",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.2.1.9000",
+        "SystemRequirements": "git",
+        "Config/testthat/edition": "3",
+        "NeedsCompilation": "no",
+        "Packaged": "2022-09-08 10:28:07 UTC; gaborcsardi",
+        "Author": "Gábor Csárdi [aut, cre],\n  RStudio [cph, fnd]",
+        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2022-09-08 10:42:55 UTC",
+        "Built": "R 4.3.0; ; 2023-04-25 05:19:53 UTC; windows"
       }
     },
     "glue": {
@@ -1572,6 +1769,36 @@
         "Built": "R 4.3.1; ; 2023-09-07 02:28:01 UTC; windows"
       }
     },
+    "httr2": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "httr2",
+        "Title": "Perform HTTP Requests and Process the Responses",
+        "Version": "1.0.2",
+        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\")),\n    person(\"Maximilian\", \"Girlich\", role = \"ctb\")\n  )",
+        "Description": "Tools for creating and modifying HTTP requests, then\n    performing them and processing the results. 'httr2' is a modern\n    re-imagining of 'httr' that uses a pipe-based interface and solves\n    more of the problems that API wrapping packages face.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://httr2.r-lib.org, https://github.com/r-lib/httr2",
+        "BugReports": "https://github.com/r-lib/httr2/issues",
+        "Depends": "R (>= 4.0)",
+        "Imports": "cli (>= 3.0.0), curl (>= 5.1.0), glue, lifecycle, magrittr,\nopenssl, R6, rappdirs, rlang (>= 1.1.0), vctrs (>= 0.6.3),\nwithr",
+        "Suggests": "askpass, bench, clipr, covr, docopt, httpuv, jose, jsonlite,\nknitr, rmarkdown, testthat (>= 3.1.8), tibble, webfakes, xml2",
+        "VignetteBuilder": "knitr",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Config/testthat/parallel": "true",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.2",
+        "NeedsCompilation": "no",
+        "Packaged": "2024-07-15 20:48:57 UTC; hadleywickham",
+        "Author": "Hadley Wickham [aut, cre],\n  Posit Software, PBC [cph, fnd],\n  Maximilian Girlich [ctb]",
+        "Maintainer": "Hadley Wickham <hadley@posit.co>",
+        "Repository": "RSPM",
+        "Date/Publication": "2024-07-16 09:30:02 UTC",
+        "Built": "R 4.3.0; ; 2024-07-17 04:42:28 UTC; windows"
+      }
+    },
     "ids": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -1595,6 +1822,32 @@
         "Repository": "CRAN",
         "Date/Publication": "2017-05-31 08:49:59 UTC",
         "Built": "R 4.3.1; ; 2023-09-07 02:06:41 UTC; windows"
+      }
+    },
+    "ini": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "ini",
+        "Type": "Package",
+        "Title": "Read and Write '.ini' Files",
+        "Version": "0.3.1",
+        "Date": "2018-05-19",
+        "Author": "David Valentim Dias",
+        "Maintainer": "David Valentim Dias <dvdscripter@gmail.com>",
+        "Description": "Parse simple '.ini' configuration files to an structured list. Users\n  can manipulate this resulting list with lapply() functions. This same\n  structured list can be used to write back to file after modifications.",
+        "License": "GPL-3",
+        "URL": "https://github.com/dvdscripter/ini",
+        "BugReports": "https://github.com/dvdscripter/ini/issues",
+        "LazyData": "FALSE",
+        "RoxygenNote": "6.0.1",
+        "Suggests": "testthat",
+        "NeedsCompilation": "no",
+        "Packaged": "2018-05-19 23:19:45 UTC; CLIENTE",
+        "Repository": "RSPM",
+        "Date/Publication": "2018-05-20 03:26:39 UTC",
+        "Encoding": "UTF-8",
+        "Built": "R 4.3.0; ; 2023-04-25 05:30:18 UTC; windows"
       }
     },
     "isoband": {
@@ -1848,6 +2101,35 @@
         "Repository": "CRAN",
         "Date/Publication": "2023-11-07 10:10:10 UTC",
         "Built": "R 4.3.3; ; 2024-04-23 01:03:02 UTC; windows"
+      }
+    },
+    "lpSolve": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "lpSolve",
+        "Version": "5.6.20",
+        "Title": "Interface to 'Lp_solve' v. 5.5 to Solve Linear/Integer Programs",
+        "Author": "Michel Berkelaar and others",
+        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+        "Description": "Lp_solve is freely available (under LGPL 2) software for\n        solving linear, integer and mixed integer programs. In this\n        implementation we supply a \"wrapper\" function in C and some R\n        functions that solve general linear/integer problems,\n        assignment problems, and transportation problems. This version\n        calls lp_solve version 5.5.",
+        "License": "LGPL-2",
+        "URL": "https://github.com/gaborcsardi/lpSolve",
+        "BugReports": "https://github.com/gaborcsardi/lpSolve/issues",
+        "Encoding": "UTF-8",
+        "NeedsCompilation": "yes",
+        "Packaged": "2023-12-10 12:59:14 UTC; gaborcsardi",
+        "Repository": "RSPM",
+        "Date/Publication": "2023-12-10 13:40:02 UTC",
+        "Built": "R 4.3.0; x86_64-w64-mingw32; 2024-01-23 01:17:45 UTC; windows",
+        "Archs": "x64",
+        "RemoteType": "standard",
+        "RemotePkgRef": "lpSolve",
+        "RemoteRef": "lpSolve",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemoteSha": "5.6.20"
       }
     },
     "lubridate": {
@@ -2136,6 +2418,71 @@
         "Built": "R 4.3.1; ; 2023-09-07 02:27:55 UTC; windows"
       }
     },
+    "pkgbuild": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "pkgbuild",
+        "Title": "Find Tools Needed to Build R Packages",
+        "Version": "1.4.4",
+        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", role = \"aut\"),\n    person(\"Jim\", \"Hester\", role = \"aut\"),\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = c(\"aut\", \"cre\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Provides functions used to build R packages. Locates\n    compilers needed to build R packages on various platforms and ensures\n    the PATH is configured appropriately so R can use them.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://github.com/r-lib/pkgbuild, https://pkgbuild.r-lib.org",
+        "BugReports": "https://github.com/r-lib/pkgbuild/issues",
+        "Depends": "R (>= 3.5)",
+        "Imports": "callr (>= 3.2.0), cli (>= 3.4.0), desc, processx, R6",
+        "Suggests": "covr, cpp11, knitr, mockery, Rcpp, rmarkdown, testthat (>=\n3.0.0), withr (>= 2.3.0)",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.2.3",
+        "NeedsCompilation": "no",
+        "Packaged": "2024-03-17 14:13:01 UTC; gaborcsardi",
+        "Author": "Hadley Wickham [aut],\n  Jim Hester [aut],\n  Gábor Csárdi [aut, cre],\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2024-03-17 14:40:02 UTC",
+        "Built": "R 4.3.0; ; 2024-06-26 20:25:07 UTC; windows"
+      }
+    },
+    "pkgcache": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "pkgcache",
+        "Title": "Cache 'CRAN'-Like Metadata and R Packages",
+        "Version": "2.2.2",
+        "Authors@R": "c(\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = c(\"aut\", \"cre\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Metadata and package cache for CRAN-like repositories.  This\n    is a utility package to be used by package management tools that want\n    to take advantage of caching.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://r-lib.github.io/pkgcache/,\nhttps://github.com/r-lib/pkgcache",
+        "BugReports": "https://github.com/r-lib/pkgcache/issues",
+        "Depends": "R (>= 3.4)",
+        "Imports": "callr (>= 2.0.4.9000), cli (>= 3.2.0), curl (>= 3.2),\nfilelock, jsonlite, processx (>= 3.3.0.9001), R6, tools, utils",
+        "Suggests": "covr, debugme, desc, fs, mockery, pillar, pingr, rprojroot,\nsessioninfo, spelling, testthat (>= 3.2.0), webfakes (>=\n1.1.5), withr, zip",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "Language": "en-US",
+        "RoxygenNote": "7.3.1.9000",
+        "NeedsCompilation": "yes",
+        "Packaged": "2024-04-04 06:07:27 UTC; gaborcsardi",
+        "Author": "Gábor Csárdi [aut, cre],\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2024-04-04 06:33:02 UTC",
+        "Built": "R 4.3.0; x86_64-w64-mingw32; 2024-04-05 04:32:49 UTC; windows",
+        "Archs": "x64",
+        "RemoteType": "standard",
+        "RemotePkgRef": "pkgcache",
+        "RemoteRef": "pkgcache",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemoteSha": "2.2.2"
+      }
+    },
     "pkgconfig": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -2158,6 +2505,42 @@
         "Repository": "CRAN",
         "Date/Publication": "2019-09-22 09:20:02 UTC",
         "Built": "R 4.3.1; ; 2023-09-07 01:09:20 UTC; windows"
+      }
+    },
+    "pkgdepends": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "pkgdepends",
+        "Title": "Package Dependency Resolution and Downloads",
+        "Version": "0.7.2",
+        "Authors@R": "c(\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = c(\"aut\", \"cre\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Find recursive dependencies of 'R' packages from various\n    sources. Solve the dependencies to obtain a consistent set of packages\n    to install. Download packages, and install them. It supports packages\n    on 'CRAN', 'Bioconductor' and other 'CRAN-like' repositories,\n    'GitHub', package 'URLs', and local package trees and files. It caches\n    metadata and package files via the 'pkgcache' package, and performs\n    all 'HTTP' requests, downloads, builds and installations in parallel.\n    'pkgdepends' is the workhorse of the 'pak' package.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://r-lib.github.io/pkgdepends/,\nhttps://github.com/r-lib/pkgdepends",
+        "BugReports": "https://github.com/r-lib/pkgdepends/issues",
+        "Depends": "R (>= 3.5)",
+        "Imports": "callr (>= 3.3.1), cli (>= 3.6.0), curl, desc (>= 1.4.3),\nfilelock (>= 1.0.2), jsonlite, lpSolve, pkgbuild (>= 1.0.2),\npkgcache (>= 2.2.0), processx (>= 3.4.2), ps, R6, stats, utils,\nzip (>= 2.3.0)",
+        "Suggests": "asciicast (>= 2.2.0.9000), codetools, covr, debugme, fansi,\nfs, glue, htmlwidgets, mockery, pak, pingr (>= 2.0.0),\nrmarkdown, rstudioapi, spelling, svglite, testthat (>= 3.2.0),\ntibble, webfakes (>= 1.1.5.9000), withr (>= 2.1.1)",
+        "Config/Needs/coverage": "r-lib/asciicast, covr",
+        "Config/Needs/website": "r-lib/asciicast, pkgdown (>= 2.0.2),\ntidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.2.3",
+        "NeedsCompilation": "no",
+        "Packaged": "2024-03-17 14:42:39 UTC; gaborcsardi",
+        "Author": "Gábor Csárdi [aut, cre],\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2024-03-17 15:10:02 UTC",
+        "Built": "R 4.3.0; ; 2024-03-18 15:45:46 UTC; windows",
+        "RemoteType": "standard",
+        "RemotePkgRef": "pkgdepends",
+        "RemoteRef": "pkgdepends",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemoteSha": "0.7.2"
       }
     },
     "prettyunits": {
@@ -2810,6 +3193,41 @@
         "Built": "R 4.3.1; ; 2023-09-07 02:28:12 UTC; windows"
       }
     },
+    "shinylive": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "shinylive",
+        "Title": "Run 'shiny' Applications in the Browser",
+        "Version": "0.2.0",
+        "Authors@R": "c(\n    person(\"Barret\", \"Schloerke\", , \"barret@posit.co\", role = c(\"aut\", \"cre\"),\n           comment = c(ORCID = \"0000-0001-9986-114X\")),\n    person(\"Winston\", \"Chang\", , \"winston@posit.co\", role = \"aut\",\n           comment = c(ORCID = \"0000-0002-1576-2126\")),\n    person(\"George\", \"Stagg\", , \"george.stagg@posit.co\", role = \"aut\"),\n    person(\"Garrick\", \"Aden-Buie\", , \"garrick@posit.co\", role = \"aut\",\n           comment = c(ORCID = \"0000-0002-7111-0077\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Exporting 'shiny' applications with 'shinylive' allows you to\n    run them entirely in a web browser, without the need for a separate R\n    server. The traditional way of deploying 'shiny' applications involves\n    in a separate server and client: the server runs R and 'shiny', and\n    clients connect via the web browser. When an application is deployed\n    with 'shinylive', R and 'shiny' run in the web browser (via 'webR'):\n    the browser is effectively both the client and server for the\n    application. This allows for your 'shiny' application exported by\n    'shinylive' to be hosted by a static web server.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://posit-dev.github.io/r-shinylive/,\nhttps://github.com/posit-dev/r-shinylive",
+        "BugReports": "https://github.com/posit-dev/r-shinylive/issues",
+        "Imports": "archive, brio, cli, fs, gh, glue, httr2 (>= 1.0.0), jsonlite,\npkgdepends, progress, rappdirs, renv, rlang, tools, whisker,\nwithr",
+        "Suggests": "httpuv (>= 1.6.12), pkgcache, spelling, testthat (>= 3.0.0)",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "Language": "en-US",
+        "RoxygenNote": "7.3.2",
+        "NeedsCompilation": "no",
+        "Packaged": "2024-07-19 19:42:40 UTC; barret",
+        "Author": "Barret Schloerke [aut, cre] (<https://orcid.org/0000-0001-9986-114X>),\n  Winston Chang [aut] (<https://orcid.org/0000-0002-1576-2126>),\n  George Stagg [aut],\n  Garrick Aden-Buie [aut] (<https://orcid.org/0000-0002-7111-0077>),\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Barret Schloerke <barret@posit.co>",
+        "Repository": "RSPM",
+        "Date/Publication": "2024-07-19 20:00:01 UTC",
+        "Built": "R 4.3.0; ; 2024-07-20 04:37:21 UTC; windows",
+        "RemoteType": "standard",
+        "RemotePkgRef": "shinylive",
+        "RemoteRef": "shinylive",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemoteSha": "0.2.0"
+      }
+    },
     "stringi": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -3339,6 +3757,30 @@
         "RemoteSha": "1.6.5"
       }
     },
+    "whisker": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "whisker",
+        "Maintainer": "Edwin de Jonge <edwindjonge@gmail.com>",
+        "License": "GPL-3",
+        "Title": "{{mustache}} for R, Logicless Templating",
+        "Type": "Package",
+        "LazyLoad": "yes",
+        "Author": "Edwin de Jonge",
+        "Description": "Implements 'Mustache' logicless templating.",
+        "Version": "0.4.1",
+        "URL": "https://github.com/edwindj/whisker",
+        "Suggests": "markdown",
+        "RoxygenNote": "6.1.1",
+        "NeedsCompilation": "no",
+        "Packaged": "2022-12-05 15:15:55 UTC; hornik",
+        "Repository": "RSPM",
+        "Date/Publication": "2022-12-05 15:33:50 UTC",
+        "Encoding": "UTF-8",
+        "Built": "R 4.3.0; ; 2023-04-25 05:27:44 UTC; windows"
+      }
+    },
     "withr": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -3452,11 +3894,45 @@
         "Built": "R 4.3.2; x86_64-w64-mingw32; 2024-02-25 01:56:27 UTC; windows",
         "Archs": "x64"
       }
+    },
+    "zip": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "zip",
+        "Title": "Cross-Platform 'zip' Compression",
+        "Version": "2.3.1",
+        "Authors@R": "c(\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = c(\"aut\", \"cre\")),\n    person(\"Kuba\", \"Podgórski\", role = \"ctb\"),\n    person(\"Rich\", \"Geldreich\", role = \"ctb\"),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Cross-Platform 'zip' Compression Library. A replacement for\n    the 'zip' function, that does not require any additional external\n    tools on any platform.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://github.com/r-lib/zip, https://r-lib.github.io/zip/",
+        "BugReports": "https://github.com/r-lib/zip/issues",
+        "Suggests": "covr, processx, R6, testthat, withr",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.2.3",
+        "NeedsCompilation": "yes",
+        "Packaged": "2024-01-27 09:28:29 UTC; gaborcsardi",
+        "Author": "Gábor Csárdi [aut, cre],\n  Kuba Podgórski [ctb],\n  Rich Geldreich [ctb],\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2024-01-27 10:00:02 UTC",
+        "Built": "R 4.3.0; x86_64-w64-mingw32; 2024-01-30 11:53:29 UTC; windows",
+        "Archs": "x64",
+        "RemoteType": "standard",
+        "RemotePkgRef": "zip",
+        "RemoteRef": "zip",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemoteSha": "2.3.1"
+      }
     }
   },
   "files": {
     ".Rprofile": {
-      "checksum": "e5e6dcbaee72ce37ed7d85847c0f43ba"
+      "checksum": "d3be8674acd58fc9d3453e17f055e295"
     },
     "_extensions/quarto-ext/lightbox/_extension.yml": {
       "checksum": "9d4227e9643702041f4905b21ab92edb"
@@ -3501,10 +3977,727 @@
       "checksum": "bdbf9246bd2eb7ff5942b3bdc0f3a401"
     },
     "renv.lock": {
-      "checksum": "e99b8a8d062e01dbc901d06eebc67865"
+      "checksum": "85705cc97976b5af1cf723e6ba69a9b3"
+    },
+    "shinylive-sw.js": {
+      "checksum": "c1ef187fa733aa5e6019be968285fb91"
+    },
+    "utterances.html": {
+      "checksum": "d67c2c5b9a8dfe05baa72c6ef9bfee2b"
     },
     "utterances.qmd": {
-      "checksum": "0ca0a91603caf4847e1fbda53691aed1"
+      "checksum": "3bce171ebe25bba044111be1678a60ca"
+    },
+    "utterances_files/libs/bootstrap/bootstrap-icons.css": {
+      "checksum": "2318f137d201fbf51601fa0faba6bef7"
+    },
+    "utterances_files/libs/bootstrap/bootstrap-icons.woff": {
+      "checksum": "1a51dfbe5467607389d603c02a77cd10"
+    },
+    "utterances_files/libs/bootstrap/bootstrap.min.css": {
+      "checksum": "6af7fe331e124e9a3628ff5072715d11"
+    },
+    "utterances_files/libs/bootstrap/bootstrap.min.js": {
+      "checksum": "e2b09c06f0e714b6144a6788a28e3950"
+    },
+    "utterances_files/libs/clipboard/clipboard.min.js": {
+      "checksum": "15f52a1ee547f2bdd46e56747332ca2d"
+    },
+    "utterances_files/libs/crosstalk-1.2.1/css/crosstalk.min.css": {
+      "checksum": "3372343a6739e49faffeb858d451558e"
+    },
+    "utterances_files/libs/crosstalk-1.2.1/js/crosstalk.js": {
+      "checksum": "0cedbe7e922170c10db55772f82139e3"
+    },
+    "utterances_files/libs/crosstalk-1.2.1/js/crosstalk.js.map": {
+      "checksum": "6f4eb7fff5f7965637440ad7be0fb877"
+    },
+    "utterances_files/libs/crosstalk-1.2.1/js/crosstalk.min.js": {
+      "checksum": "66b6e84d85256249d722c6e94143eb73"
+    },
+    "utterances_files/libs/crosstalk-1.2.1/js/crosstalk.min.js.map": {
+      "checksum": "7a0a37270ea71dee56cebc627c58ca03"
+    },
+    "utterances_files/libs/crosstalk-1.2.1/scss/crosstalk.scss": {
+      "checksum": "e5410240dcb4f51691eab5f9a62720d7"
+    },
+    "utterances_files/libs/datatables-binding-0.31/datatables.js": {
+      "checksum": "4da8cfb6abf2cf8872fb80a6862fcee7"
+    },
+    "utterances_files/libs/datatables-css-0.0.0/datatables-crosstalk.css": {
+      "checksum": "d8b3c70e6451e656f1fa231e2bf97ced"
+    },
+    "utterances_files/libs/dt-core-1.13.6/css/jquery.dataTables.extra.css": {
+      "checksum": "704b5e060968ac06041f9b2d9ee545b5"
+    },
+    "utterances_files/libs/dt-core-1.13.6/css/jquery.dataTables.min.css": {
+      "checksum": "e3621690205662b3f96746d73a0fe4b2"
+    },
+    "utterances_files/libs/dt-core-1.13.6/js/jquery.dataTables.min.js": {
+      "checksum": "44e877882207ee93b9d9d17dd0e11c87"
+    },
+    "utterances_files/libs/dt-ext-buttons-1.13.6/css/buttons.dataTables.min.css": {
+      "checksum": "00cc73f64de3b80e59a72111531b998f"
+    },
+    "utterances_files/libs/dt-ext-buttons-1.13.6/js/buttons.colVis.min.js": {
+      "checksum": "e002592b6dfe63a886370c38483b88fe"
+    },
+    "utterances_files/libs/dt-ext-buttons-1.13.6/js/buttons.html5.min.js": {
+      "checksum": "60951d2599efa4b14068b9d627e4c292"
+    },
+    "utterances_files/libs/dt-ext-buttons-1.13.6/js/buttons.print.min.js": {
+      "checksum": "c05c574c7f1b49021057c09c58d31fb3"
+    },
+    "utterances_files/libs/dt-ext-buttons-1.13.6/js/dataTables.buttons.min.js": {
+      "checksum": "95a44513b62c3b59fab8bacd38b36383"
+    },
+    "utterances_files/libs/htmlwidgets-1.6.4/htmlwidgets.js": {
+      "checksum": "237f59bc086ccf24f39be55311023b91"
+    },
+    "utterances_files/libs/jquery-3.6.0/jquery-3.6.0.js": {
+      "checksum": "2849239b95f5a9a2aea3f6ed9420bb88"
+    },
+    "utterances_files/libs/jquery-3.6.0/jquery-3.6.0.min.js": {
+      "checksum": "8fb8fee4fcc3cc86ff6c724154c49c42"
+    },
+    "utterances_files/libs/jquery-3.6.0/jquery-3.6.0.min.map": {
+      "checksum": "6efc5d663aaacac2024153fa0d4bafcd"
+    },
+    "utterances_files/libs/jszip-1.13.6/jszip.min.js": {
+      "checksum": "b5d02b3f0bf3ae026451909419df07bb"
+    },
+    "utterances_files/libs/pdfmake-1.13.6/pdfmake.js": {
+      "checksum": "fc8e4f397813e7f57ff1539e55da764a"
+    },
+    "utterances_files/libs/pdfmake-1.13.6/vfs_fonts.js": {
+      "checksum": "8a026906153f3e29bc684f6b392e8654"
+    },
+    "utterances_files/libs/quarto-contrib/glightbox/glightbox.min.css": {
+      "checksum": "9b438b29cef1c212d1c65a877ffc7232"
+    },
+    "utterances_files/libs/quarto-contrib/glightbox/glightbox.min.js": {
+      "checksum": "2b4c8cbaade24ecb58bcb0d89694ccee"
+    },
+    "utterances_files/libs/quarto-contrib/glightbox/lightbox.css": {
+      "checksum": "2857705abe7b271745f7d60903d2eedd"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive-sw.js": {
+      "checksum": "c1ef187fa733aa5e6019be968285fb91"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/browser-4LXWBP4F.js": {
+      "checksum": "cb5d33575d0b24f0247e135dfd5e0336"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/browser-MVPLTHEE.js": {
+      "checksum": "e4588d30393519300336279075b5b1f1"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/chunk-BQSUMDFT.js": {
+      "checksum": "dc43fe94cf99dc60a16f33bde67ed0f3"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/chunk-ZBWGEFNY.js": {
+      "checksum": "fd0e041fb9091f99138578ddde77fd5e"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/Editor.css": {
+      "checksum": "1a0dcad8f4b255aef1c4555cf648d227"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/Editor.js": {
+      "checksum": "ffbf3daf57865868627d3e93927c8a10"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/load-shinylive-sw.js": {
+      "checksum": "2f38b8a208a82a4f2eaeba76516a1b55"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/lzstring-worker.js": {
+      "checksum": "10aea388ec796a8830668a75e828578c"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/pyodide-worker.js": {
+      "checksum": "e39a41d619cffdf24622fc57eb5daa50"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/run-python-blocks.js": {
+      "checksum": "51a6afdd7da06d0fe4b150c3cec29d84"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/shinylive.css": {
+      "checksum": "db7517141ec82a5492f229ff01cae905"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/shinylive.js": {
+      "checksum": "5e0018e1091a97eeb3857ec090a9a067"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/style-resets.css": {
+      "checksum": "326179a3af08325314a9f92ef53b7b20"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/esbuild.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/library.data": {
+      "checksum": "9ef547e9a57ab2012aa0b3e26eb01680"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/library.js.metadata": {
+      "checksum": "dc4490addc99b4407c7c23876add8b77"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/libRblas.so": {
+      "checksum": "95d021b4cd5f74a6abbee092a2de30bc"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/libRlapack.so": {
+      "checksum": "2061ea193621976d961a0421ef431f56"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/packages/metadata.rds": {
+      "checksum": "d0d10cdd7c44f086c547cce9697b28f9"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/R.bin.data": {
+      "checksum": "45dffc7c5bc7d6f9978481d498023dbb"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/R.bin.js": {
+      "checksum": "3ea7d8d6bb73bf00865cba0727232b50"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/R.bin.js.bak": {
+      "checksum": "7637a51a8e52339d4905e687e62cbeb3"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/R.bin.wasm": {
+      "checksum": "e323e64439f7b1bc41a0fdf4a324b460"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/repl/App.d.ts": {
+      "checksum": "6f52674a713dc1a91ec7ceb6661ae83f"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/repl/components/Editor.d.ts": {
+      "checksum": "1600d80cccab2f3d43742373e9e605f3"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/repl/components/Files.d.ts": {
+      "checksum": "85184877fbba6a5cf7cdeac40f2698b1"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/repl/components/Plot.d.ts": {
+      "checksum": "132d88e78dac188518bfc3e9805e635d"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/repl/components/Terminal.d.ts": {
+      "checksum": "1848af6209f7312499f43197fdaf5ac7"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/repl/components/utils.d.ts": {
+      "checksum": "b9f9171cc64739ca15d789bbf6529271"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/tests/packages/webr.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/tests/webR/chan/channel-postmessage.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/tests/webR/console.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/tests/webR/error.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/tests/webR/proxy.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/tests/webR/robj.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/tests/webR/utils.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/tests/webR/webr-main.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/tests/webR/webr-r.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/tests/webR/webr-worker.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/etc/fonts/fonts.conf": {
+      "checksum": "6300427804c4677462c2b187d9e2d3d3"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/doc.data": {
+      "checksum": "8eaae67dee239f8ea6dafd4e7cbb5456"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/doc.js.metadata": {
+      "checksum": "a560215a1807f822ae0208c52bc21e9d"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/base/demo.data": {
+      "checksum": "b97fa10e3624a40ddc242cf1f90ca33e"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/base/demo.js.metadata": {
+      "checksum": "fe59ac9830a37f3e4cbf46dfd544dfa7"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/base/help.data": {
+      "checksum": "563e0756b8112288dd64d893640436a4"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/base/help.js.metadata": {
+      "checksum": "81c9f3462a136f84fd32396e207f6a94"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/base/html.data": {
+      "checksum": "6d52b76482054ba0ff8adfe19ae96290"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/base/html.js.metadata": {
+      "checksum": "2747eeffc150113c3f8f35fcad45db9f"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/compiler/help.data": {
+      "checksum": "0e1c3272fc58ccad392cfcac4a63ef2b"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/compiler/help.js.metadata": {
+      "checksum": "b012d007656f430320cced26e7554f72"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/compiler/html.data": {
+      "checksum": "ef114b484ffd1e4ad82b42e535f04cde"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/compiler/html.js.metadata": {
+      "checksum": "95a6c6c9ee587fd7187539b01ea421e2"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/compiler/tests.data": {
+      "checksum": "4acc43a3194602c51ea78605a52d8078"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/compiler/tests.js.metadata": {
+      "checksum": "3781d88991275b3dd34ce121eda11110"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/datasets/help.data": {
+      "checksum": "4a7844154a568e98ca3e17f576b6a35b"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/datasets/help.js.metadata": {
+      "checksum": "e273e431354edc9acbfc576ae4ff58b3"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/datasets/html.data": {
+      "checksum": "000828da64944d2b45e9f1e1720c2e3c"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/datasets/html.js.metadata": {
+      "checksum": "26e667ee18a839994c0816ce605423a6"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/graphics/demo.data": {
+      "checksum": "d008cd970f9bd1cb3846f80b20b21481"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/graphics/demo.js.metadata": {
+      "checksum": "f6332c7e2f56012d47b2ef05251a03af"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/graphics/help.data": {
+      "checksum": "ac2fafa63933e8929a67f65087fa3f02"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/graphics/help.js.metadata": {
+      "checksum": "ac41297d3fafe87ce11def19a10b1227"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/graphics/html.data": {
+      "checksum": "9ee00b46d133610d6979acee0344d516"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/graphics/html.js.metadata": {
+      "checksum": "3a7f8f6002abecac71886ca09f35fccf"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grDevices/afm.data": {
+      "checksum": "0841d42bd21179d4f875ea8c6b8a3cc8"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grDevices/afm.js.metadata": {
+      "checksum": "7c593c7d5afa91670e5af89975b701ce"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grDevices/demo.data": {
+      "checksum": "115c0b165ee413e82a3d0b3562c6b9f2"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grDevices/demo.js.metadata": {
+      "checksum": "f5df59543ddbdb38165abc0af959ee9e"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grDevices/enc.data": {
+      "checksum": "57a857d75331f892964876c14f214851"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grDevices/enc.js.metadata": {
+      "checksum": "3b70263d2a461da0f6beee14ca10788f"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grDevices/fonts.data": {
+      "checksum": "fa92dca6ba97a7bbe299a80374eae23a"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grDevices/fonts.js.metadata": {
+      "checksum": "32fc8ec23753b36a14cddda492ba08df"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grDevices/help.data": {
+      "checksum": "0a8702f77b46965a9e293329a236ca50"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grDevices/help.js.metadata": {
+      "checksum": "3a113143ccf876c2090d590fb9922e7e"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grDevices/html.data": {
+      "checksum": "17e33414b90fd083b67303cd4ae26513"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grDevices/html.js.metadata": {
+      "checksum": "565a0591cb22fda7fff3e5cf98a2228a"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grDevices/libs/cairo.so": {
+      "checksum": "94f1c35a8e415f78c35d375162e2c8a4"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grDevices/tests.data": {
+      "checksum": "87efed9690b0fa37214d9d6dfffd12cf"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grDevices/tests.js.metadata": {
+      "checksum": "42578be07c5fa442c3e8f3a7515ed9c2"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grid/doc.data": {
+      "checksum": "a582352a66e194a08b357faeb29fd723"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grid/doc.js.metadata": {
+      "checksum": "39381515ecd83ded0a8346888154d58c"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grid/help.data": {
+      "checksum": "376c4b1755e1c0ffc659df6106f23d05"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grid/help.js.metadata": {
+      "checksum": "8cc2c0a366ab8af8fbb52ad36d8e1e7c"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grid/html.data": {
+      "checksum": "f7c633deb725c2e96ffa1fd7704a9bea"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grid/html.js.metadata": {
+      "checksum": "3a965cf41a6b096ff63a839841a44a57"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grid/tests.data": {
+      "checksum": "0e11d125ca8f1491be8b3ff0d48034a9"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/grid/tests.js.metadata": {
+      "checksum": "4202590d5ae1d22b8e751cb840ec2bfa"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/methods/help.data": {
+      "checksum": "6925b03f7062a567de6ce15eb31a168e"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/methods/help.js.metadata": {
+      "checksum": "66d9b366e33bb0c310b228fc866ac83d"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/methods/html.data": {
+      "checksum": "ed71f903bb297cf200d3f035fc044e77"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/methods/html.js.metadata": {
+      "checksum": "383ec9ea07f57bd92aba83076ebc7eb1"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/methods/tests.data": {
+      "checksum": "db90ef46b40dec78dd7604150f400ff9"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/methods/tests.js.metadata": {
+      "checksum": "b5e158f0415edd3bbf664e2b4c966e7f"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/parallel.data": {
+      "checksum": "ac4efaeff6d81f3766df9fc5b51a7199"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/parallel.js.metadata": {
+      "checksum": "aba885a0c3b71eda55ba5080f278534b"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/splines/help.data": {
+      "checksum": "62e417a885d34a5bac32a6597ec3906f"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/splines/help.js.metadata": {
+      "checksum": "96dd77a8464a0c58a2ad9936544c4abc"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/splines/html.data": {
+      "checksum": "baa8c1bdbcf1abcfcab47e976da554b6"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/splines/html.js.metadata": {
+      "checksum": "36277e71756145d8a58eb555099570f7"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/splines/tests.data": {
+      "checksum": "2c970b50d6d05663c8297ed3db14e53d"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/splines/tests.js.metadata": {
+      "checksum": "a75dfeb75efac9b43410c98ef35303c2"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/stats/demo.data": {
+      "checksum": "184f3e0bcb74626d92780758a8947e82"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/stats/demo.js.metadata": {
+      "checksum": "7346635402915c1f638dccc3f5a43361"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/stats/help.data": {
+      "checksum": "45fb4468a15f829d4ad5d251b7b40043"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/stats/help.js.metadata": {
+      "checksum": "add00d4f740a68e08c63e52b44cf3fc1"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/stats/html.data": {
+      "checksum": "6426f485f53143ce5743f70f9e71cfa3"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/stats/html.js.metadata": {
+      "checksum": "b928e0f775a5f0aea2702ae68ad99032"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/stats/tests.data": {
+      "checksum": "a04c4098c418857b1a427e18414d87e5"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/stats/tests.js.metadata": {
+      "checksum": "f4773477e37af495d13758150a878d99"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/stats4/help.data": {
+      "checksum": "9a0f6e6ad9da5784c8966d1de5c0f245"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/stats4/help.js.metadata": {
+      "checksum": "1e556fb305e00a5d454c43f267c777fa"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/stats4/html.data": {
+      "checksum": "1f79e4d91169087dd4a87492532b29a8"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/stats4/html.js.metadata": {
+      "checksum": "2241053863a66820a293b7f73df4ebf5"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/stats4/tests.data": {
+      "checksum": "d2606b2f293b232851e6daefc394391d"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/stats4/tests.js.metadata": {
+      "checksum": "fd4eeb673585d7386c54d1117793c688"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/tcltk.data": {
+      "checksum": "c53368faaa5d89c412cfed05be0f9a0f"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/tcltk.js.metadata": {
+      "checksum": "c3cb07d2b2598212c0e35467460ab9f2"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/tools/help.data": {
+      "checksum": "73279dab08dd0937098e9da10dee2054"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/tools/help.js.metadata": {
+      "checksum": "582591b623afb69f73992b3d8a7e71d8"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/tools/html.data": {
+      "checksum": "14c30433c56769f038a53269db25b5eb"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/tools/html.js.metadata": {
+      "checksum": "e69cb0f95d0a48686d5329d4355dbc65"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/tools/tests.data": {
+      "checksum": "6ef7a08f4490ded9f03eef2b0332b4a3"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/tools/tests.js.metadata": {
+      "checksum": "9142cb4390b8d0873893892a9bdcf3f4"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/translations.data": {
+      "checksum": "81c0325e28d8066e0ff928be53923227"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/translations.js.metadata": {
+      "checksum": "4e08ade88bf3566fcde017afd3d2ba46"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/translations/DESCRIPTION": {
+      "checksum": "8c74fc51c182b93b45d7c801202cb889"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/utils/doc.data": {
+      "checksum": "93caed4bdeecddae7bf80250e60d1768"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/utils/doc.js.metadata": {
+      "checksum": "b60e4a241210b3309e2cdfae27a641fd"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/utils/help.data": {
+      "checksum": "a6f6e2c60c9d6175a96ab46e606834b3"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/utils/help.js.metadata": {
+      "checksum": "9af0869d3c1b7b2332fd67201ef0946b"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/utils/html.data": {
+      "checksum": "c55eafd96765e70082e7a9b2d86f0b3b"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/utils/html.js.metadata": {
+      "checksum": "461076de2ae71666aa84ae2e69b94960"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/utils/misc.data": {
+      "checksum": "dc1fdc8566529881bf55d3e88fac4b6f"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/utils/misc.js.metadata": {
+      "checksum": "612cba7ef6f134d6e2ee8dd823227f0d"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/utils/tests.data": {
+      "checksum": "2ba4f796d43052aadcfecfd796d3b5a4"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/utils/tests.js.metadata": {
+      "checksum": "c06544a021f229d4b18e4c7a27c3150a"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/webr/help.data": {
+      "checksum": "8e2d22f405162138d7104b8d8be65ffd"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/webr/help.js.metadata": {
+      "checksum": "f67e89c8235ef6b573ccbab62a1a5fff"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/webr/html.data": {
+      "checksum": "7aa2c57b2a9a04c25354fd7b097a839b"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/library/webr/html.js.metadata": {
+      "checksum": "0bda4be9e3d94b4705c219d8a08bf689"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/share.data": {
+      "checksum": "a425260fa612fb822d312ffd91a7bff6"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/share.js.metadata": {
+      "checksum": "d5d7a98791166b7a3775bb15dcc7310d"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/tests.data": {
+      "checksum": "224eca41271df73fc8f60cea1d5e63e7"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/lib/R/tests.js.metadata": {
+      "checksum": "47130a52df1f3625d193eea09c2ca774"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/fonts/NotoSans-Bold.ttf": {
+      "checksum": "5959e861b45905afb3f5659b66e5a43b"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/fonts/NotoSans-BoldItalic.ttf": {
+      "checksum": "258746b7854392bcfd5531c3110674a1"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/fonts/NotoSans-Italic.ttf": {
+      "checksum": "b650143d06ff517e7482b6cbecb057b7"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/fonts/NotoSans-Regular.ttf": {
+      "checksum": "556ad26a9ff8afce0ea47896b298f4bf"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/fonts/NotoSansMono-Bold.ttf": {
+      "checksum": "e03f7c60925be06f6037ab22ceef6534"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/fonts/NotoSansMono-Regular.ttf": {
+      "checksum": "76bc9dee5de9d62cf1fff05a85b6d463"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/fonts/NotoSerif-Bold.ttf": {
+      "checksum": "ffdf273d3e86678a428bfe16de5793e5"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/fonts/NotoSerif-BoldItalic.ttf": {
+      "checksum": "0036797788d93b0f0cae86eec0040b1b"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/fonts/NotoSerif-Italic.ttf": {
+      "checksum": "4c488bfae3b56f7f85ddd8af6829accc"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/fonts/NotoSerif-Regular.ttf": {
+      "checksum": "788141e28255aec7da6d1f5444ddad4c"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/gdal.data": {
+      "checksum": "906b74139c643ee2ff39fe126d64225e"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/gdal.js.metadata": {
+      "checksum": "eb1cd6615f4c7bc6928bcbe9907dec7a"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/proj.data": {
+      "checksum": "2762d2e08555b4919b5cca654059f4a6"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/proj.js.metadata": {
+      "checksum": "45886af888cc96465a046ae01862e36b"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/udunits.data": {
+      "checksum": "5c9adc002682bd8219115e47205abdc9"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/usr/share/udunits.js.metadata": {
+      "checksum": "1a5c14ca2d82ff8d174b641261079e23"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/var/cache/fontconfig/3830d5c3ddfd5cd38a049b759396e72e-le32d8.cache-7": {
+      "checksum": "9c76b2216dc8e1f9e9a52ce8e15e2383"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/vfs/var/cache/fontconfig/CACHEDIR.TAG": {
+      "checksum": "edad2301cde055e29b0d30b8d2f4b724"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webr-serviceworker.js": {
+      "checksum": "6876da0f1da4919269b12939fbf31674"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webr-serviceworker.js.map": {
+      "checksum": "2a14bb1f0c9d4050af473b1f638c540e"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webr-serviceworker.mjs": {
+      "checksum": "6353b631c6f6b280eca93a4f41bd4d80"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webr-serviceworker.mjs.map": {
+      "checksum": "771702683d95a98c01cee7f1a16d1492"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webr-worker.js": {
+      "checksum": "ac40ea446060d3c53a433ef6562c8d37"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webr-worker.js.map": {
+      "checksum": "2bf7a0494df29e9b78e4d6b6a91782e3"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webr.cjs": {
+      "checksum": "c87498b68505804b1d9411137d75876f"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webr.cjs.map": {
+      "checksum": "51b22745df48655bd567bc8ade7a0750"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webr.mjs": {
+      "checksum": "0b3ffa80ea592b2162bcae8c67890099"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webr.mjs.map": {
+      "checksum": "83af22c7e53119c914b164b349c3ddea"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/chan/channel-common.d.ts": {
+      "checksum": "fec049491a432f1ccbf3ce024bba3baa"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/chan/channel-postmessage.d.ts": {
+      "checksum": "b0ee2ba6efe10710dc7061b467b37bf8"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/chan/channel-service.d.ts": {
+      "checksum": "6e7e5f5796d610ea1bb783c1acfa388d"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/chan/channel-shared.d.ts": {
+      "checksum": "b8238297c56343a6f1703187c16db0b0"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/chan/channel.d.ts": {
+      "checksum": "ae565b837db4ae87ba2152b9d961eb22"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/chan/message.d.ts": {
+      "checksum": "7705b5d065fc7c9ec24c5906bcb3e1e9"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/chan/queue.d.ts": {
+      "checksum": "88820d2b2237896b22d15da0bb8246ea"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/chan/serviceworker.d.ts": {
+      "checksum": "6d929e5cd8ad392cfa10734d88c25d67"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/chan/task-common.d.ts": {
+      "checksum": "5bec41a29d2b750b509fcc4f8a1ed1e0"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/chan/task-main.d.ts": {
+      "checksum": "f6f605da203f29469a5b4d38b2c0bcce"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/chan/task-worker.d.ts": {
+      "checksum": "cf6b12ffd3797cb9303bbd190351eb4b"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/compat.d.ts": {
+      "checksum": "33eda8bd4455ab1b10c7e580db558f45"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/config.d.ts": {
+      "checksum": "f32320cdf2c63f1f2a19a2d090dbdcee"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/console.d.ts": {
+      "checksum": "591c23a125e11dcf3dd2e959cfdc06b9"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/emscripten.d.ts": {
+      "checksum": "e8842af4b6216e7077ad58bbb207bef9"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/error.d.ts": {
+      "checksum": "f6ab6e58de6eb63a7d7b16aaa48be714"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/payload.d.ts": {
+      "checksum": "eb9cd4d5c9df6f2a1a9b20e70e06aa35"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/proxy.d.ts": {
+      "checksum": "60050c04a4a7bef595d0b8fe6477ca36"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/robj-main.d.ts": {
+      "checksum": "d01b9ab014e5b5d44f1b52bf6ab177e0"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/robj-worker.d.ts": {
+      "checksum": "6df4a4fa57fa272f661e797033c6f458"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/robj.d.ts": {
+      "checksum": "36b1c032d91beb66132e8e21fc21865c"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/utils-r.d.ts": {
+      "checksum": "8dd57576c21644349c45e562ce9f1f4a"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/utils.d.ts": {
+      "checksum": "261bb1e9718c734a460306deb79329b9"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/webr-chan.d.ts": {
+      "checksum": "683480399ea03890693829db6ee60495"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/webr-main.d.ts": {
+      "checksum": "8ec51e4475f62a07a1557331187ea82e"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-0.5.0/shinylive/webr/webR/webr-worker.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "utterances_files/libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css": {
+      "checksum": "a66352fc1966c083966991ad27ed5800"
+    },
+    "utterances_files/libs/quarto-html/anchor.min.js": {
+      "checksum": "91bcf6cd1fd88fec3f109811e5fc3546"
+    },
+    "utterances_files/libs/quarto-html/popper.min.js": {
+      "checksum": "3a4a291ccf3f1ea0f82b641542fd3827"
+    },
+    "utterances_files/libs/quarto-html/quarto-syntax-highlighting.css": {
+      "checksum": "49bff82b9355f257417faaaa77dd1607"
+    },
+    "utterances_files/libs/quarto-html/quarto.js": {
+      "checksum": "2ca82ae8ee1e5762d249c6b6c0802e30"
+    },
+    "utterances_files/libs/quarto-html/tippy.css": {
+      "checksum": "ebd6f8ce46a677e1a4f5f8a8317109a9"
+    },
+    "utterances_files/libs/quarto-html/tippy.umd.min.js": {
+      "checksum": "d828775275749701b48bd9d958814111"
     }
   },
   "users": null

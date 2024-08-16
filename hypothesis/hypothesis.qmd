@@ -4,12 +4,19 @@ format: html
 editor: source
 filters:
    - lightbox
+   - shinylive
 lightbox: auto
 comments:
   hypothesis: true
 ---
 
 <!-- setwd("C:/Users/LisaAnders/Documents/git/quarto_with_comments/hypothesis") -->
+
+## Comments 
+
+Users can add comments to the document using a couple of the extension options: hyothes.is, giscus, or utterances. Each interacts with the document in a different way. Note that both giscus and utteranes require github to set up the extension and all commenting users to have gituhub accounts. 
+
+Learn more about adding comments with: <https://quarto.org/docs/output-formats/html-basics.html#commenting> 
 
 ## Quarto
 
@@ -55,6 +62,8 @@ These images are interactive, try clicking on one!
 Images are from Wikipedia and in the public domain:
 
 ```{r}
+#| warning: false
+#| echo: false
 library(tidyverse)
 library(DT)
 library(shinylive)
@@ -72,9 +81,10 @@ img_ref %>%
                            lengthMenu = list(c(10,25,50,-1),
                                              c(10,25,50,"All"))))
 ```
+
 # Shinylive
 
-r-shinylive: <https://posit-dev.github.io/r-shinylive/> 
+We can also interactively embed shiny apps using shinylive so that they will render within our static document. Pretty cool, right? For more check out r-shinylive: <https://posit-dev.github.io/r-shinylive/> 
 
 ```{shinylive-r}
 #| standalone: true
@@ -91,7 +101,6 @@ library(datasets)
 # and then use the value throughout the lifetime of the app
 mpgData <- mtcars
 mpgData$am <- factor(mpgData$am, labels = c("Automatic", "Manual"))
-
 
 # Define UI for miles per gallon app ----
 ui <- page_sidebar(
@@ -156,10 +165,4 @@ server <- function(input, output) {
 shinyApp(ui, server)
 
 ```
-
-
-## Comments 
-
-Comments are added following: <https://quarto.org/docs/output-formats/html-basics.html#commenting> 
-
 
