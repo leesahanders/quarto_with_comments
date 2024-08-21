@@ -6,15 +6,16 @@ Example published to:
 - Utterances: <https://pub.demo.posit.team/utterances/>
 - Giscus: <https://pub.demo.posit.team/giscus/>
 
-Hypothesis uses a separate provider that you need to sign up for an account with in order to leave comments. 
+Note that, for now, the shinylive widget doesn't successfully load. 
 
-The utterances app needs to be installed for the target github repo: <https://github.com/apps/utterances/installations/new>  
+## Implementation
 
-The giscuss app also needs to be installed for the target github repo: <https://github.com/giscus/giscus> and <https://github.com/apps/giscus> 
+- Hypothesis uses a separate provider that you need to sign up for an account with in order to leave comments. 
+- The utterances app needs to be installed for the target github repo: <https://github.com/apps/utterances/installations/new>  
+- The giscuss app also needs to be installed for the target github repo: <https://github.com/giscus/giscus> and <https://github.com/apps/giscus> 
+- You can double checked it was installed through your account git options under applications: <https://github.com/settings/installations/> 
 
-You can double checked it was installed through your account git options under applications: <https://github.com/settings/installations/> 
-
-References: 
+## References
 
 - <https://quarto.org/docs/output-formats/html-basics.html#commenting> 
 - <https://github.com/quarto-ext/lightbox> 
@@ -23,6 +24,8 @@ References:
 - Install the lightbox extension: <https://github.com/quarto-ext/lightbox>
 
 Example also used in: <https://github.com/rstudio/posit-demo-assets/blob/main/Python/quarto-lightbox/quarto-python-lightbox.qmd> 
+
+## Using extensions
 
 Quarto Lightbox extension added with: 
 
