@@ -12,7 +12,7 @@ Note that, for now, the shinylive widget doesn't successfully load.
 
 - Hypothesis uses a separate provider that you need to sign up for an account with in order to leave comments. 
 - The utterances app needs to be installed for the target github repo: <https://github.com/apps/utterances/installations/new>  
-- The giscuss app also needs to be installed for the target github repo: <https://github.com/giscus/giscus> and <https://github.com/apps/giscus> 
+- The giscuss app also needs to be installed for the target github repo: <https://github.com/giscus/giscus> and <https://github.com/apps/giscus> and configured <https://giscus.app/> with [discussions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository) turned on for your repo
 - You can double checked it was installed through your account git options under applications: <https://github.com/settings/installations/> 
 
 ## References
