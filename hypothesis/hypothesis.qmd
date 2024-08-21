@@ -8,8 +8,7 @@ filters:
 lightbox: auto
 comments: 
   hypothesis:
-    theme: clean
-    openSidebar: false
+    openSidebar: true
 ---
 
 <!-- setwd("C:/Users/LisaAnders/Documents/git/quarto_with_comments/hypothesis") -->
