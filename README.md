@@ -1,6 +1,18 @@
 # quarto_with_comments
 
-Example published to: <https://colorado.posit.co/rsc/quarto-utterances/>
+Example published to: 
+
+- Hypothesis: <https://pub.demo.posit.team/hypothesis/>
+- Utterances: <https://pub.demo.posit.team/utterances/>
+- Giscus: <https://pub.demo.posit.team/giscus/>
+
+Hypothesis uses a separate provider that you need to sign up for an account with in order to leave comments. 
+
+The utterances app needs to be installed for the target github repo: <https://github.com/apps/utterances/installations/new>  
+
+The giscuss app also needs to be installed for the target github repo: <https://github.com/giscus/giscus> and <https://github.com/apps/giscus> 
+
+You can double checked it was installed through your account git options under applications: <https://github.com/settings/installations/> 
 
 References: 
 
@@ -36,12 +48,6 @@ resource_files:
 - "_extensions/quarto-ext/lightbox/resources/css/glightbox.min.css"
 - "_extensions/quarto-ext/lightbox/resources/js/glightbox.min.js"
 ```
-
-The utterances app needs to be installed for the target github repo: <https://github.com/apps/utterances/installations/new>  
-
-The giscuss app also needs to be installed for the target github repo: <https://github.com/giscus/giscus> and <https://github.com/apps/giscus> 
-
-You can double checked it was installed through your account git options under applications: <https://github.com/settings/installations/> 
 
 
 
