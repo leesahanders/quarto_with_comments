@@ -13,6 +13,22 @@ comments:
 
 <!-- setwd("C:/Users/LisaAnders/Documents/git/quarto_with_comments/giscus") -->
 
+<script src="https://giscus.app/client.js"
+        data-repo="leesahanders/quarto_with_comments"
+        data-repo-id="R_kgDOLIJtnA"
+        data-category="Show and tell"
+        data-category-id="DIC_kwDOLIJtnM4Ch1g2"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
 
 ## Comments 
 
