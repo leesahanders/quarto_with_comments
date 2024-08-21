@@ -6,9 +6,10 @@ filters:
    - lightbox
    - shinylive
 lightbox: auto
-comments:
-  hypothesis: true
-    openSidebar: true
+comments: 
+  hypothesis:
+    theme: clean
+    openSidebar: false
 ---
 
 <!-- setwd("C:/Users/LisaAnders/Documents/git/quarto_with_comments/hypothesis") -->
